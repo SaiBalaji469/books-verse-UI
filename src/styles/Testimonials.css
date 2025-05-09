@@ -1,0 +1,131 @@
+.testimonials {
+  background-color: var(--color-background);
+  padding: var(--space-3xl) 0;
+}
+
+.testimonials-container {
+  max-width: 900px;
+}
+
+.testimonials-slider {
+  margin: var(--space-xl) 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  background-color: var(--color-card);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  width: 100%;
+}
+
+.quote-mark {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  color: var(--color-accent);
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: var(--space-xl);
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: var(--space-md);
+  border: 3px solid var(--color-accent);
+}
+
+.author-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.author-location {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.testimonial-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-text-light);
+  border: none;
+  margin: 0 var(--space-xs);
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+  opacity: 1;
+  background-color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+/* Animation */
+.testimonials-container.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.testimonials-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .testimonial-text {
+    font-size: var(--font-size-md);
+  }
+  
+  .testimonial-card {
+    padding: var(--space-lg);
+  }
+  
+  .quote-mark {
+    font-size: 3rem;
+  }
+}
+
+.section-title {
+  color: #111 !important;
+  text-shadow: none;
+}
