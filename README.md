@@ -20,8 +20,8 @@ A modern, visually stunning React landing page for book discovery and e-commerce
 ## Getting Started
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/bookverse-landing.git
-   cd bookverse-landing
+   git clone https://github.com/SaiBalaji469/books-verse-UI
+   cd books-verse-UI
    ```
 2. **Install dependencies:**
    ```bash
